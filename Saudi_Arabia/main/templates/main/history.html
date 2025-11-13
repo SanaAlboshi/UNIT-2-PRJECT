@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}History of Saudi Arabia{% endblock %}
+{% block wrapper_class %}history-wrapper{% endblock %}
+
+
+{% block extra_head %}
+<link href="{% static 'css/history.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+
+<div class="old-era-container">
+  <div class="header-section">
+    <h1>JOURNEY THROUGH THE HISTORY OF SAUDI ARABIA</h1>
+    <p>From Diriyah to the Modern Kingdom — A Legacy of Unity and Strength</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="event">
+      <h2>1744 (1157 AH)</h2>
+      <p>The First Saudi State was founded in Diriyah by Imam Muhammad bin Saud and Sheikh Muhammad bin Abdulwahhab. It became a center for unity, knowledge, and religious reform in Arabia.</p>
+    </div>
+
+    <div class="event">
+      <h2>1818 (1233 AH)</h2>
+      <p>The First Saudi State came to an end after the Ottoman campaign led by Ibrahim Pasha, which destroyed Diriyah and marked a temporary halt in unification efforts.</p>
+    </div>
+
+    <div class="event">
+      <h2>1824 (1240 AH)</h2>
+      <p>The Second Saudi State was founded by Imam Turki bin Abdullah, restoring stability and choosing Riyadh as the new capital.</p>
+    </div>
+
+    <div class="event">
+      <h2>1891 (1309 AH)</h2>
+      <p>The Second Saudi State fell due to internal conflicts and external pressures, leading to the temporary loss of Riyadh.</p>
+    </div>
+
+    <div class="event">
+      <h2>1902 (1319 AH)</h2>
+      <p>King Abdulaziz bin Abdulrahman Al Saud recaptured Riyadh, marking the beginning of the unification of the Arabian Peninsula.</p>
+    </div>
+
+    <div class="event">
+      <h2>1932 (1351 AH)</h2>
+      <p>The Kingdom of Saudi Arabia was officially established, uniting the regions under one nation and beginning an era of progress, faith, and development.</p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

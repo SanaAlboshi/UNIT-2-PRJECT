@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Second Saudi State{% endblock %}
+{% block wrapper_class %}state2-wrapper{% endblock %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- الكود العام -->
+<div class="map-section">
+  <div class="hero-overlay"></div>
+
+  <h1 class="hero-titlee">
+    Second Saudi State<br>
+    <p class="hero-subtitle">1234 - 1344 AH / 1818 - 1891 AD</p>
+  </h1>
+
+  <!-- Floating Cards Over Hero -->
+  <div class="cards-over-hero">
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="card-item historical-card">
+        <h4>Restoration and Revival</h4>
+        <p>
+          After the fall of the First Saudi State, local leaders and descendants of Imam Saud worked to restore governance in Najd and revive Saudi authority.
+        </p>
+        <a href="#detail1" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-item historical-card">
+        <h4>Governance and Stability</h4>
+        <p>
+          Centralized authority was gradually re-established, with attention to tribal alliances, legal administration, and the implementation of Islamic law.
+        </p>
+        <a href="#detail2" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-item historical-card">
+        <h4>Challenges and Conflicts</h4>
+        <p>
+          The state faced internal rivalries and external threats, including confrontations with the Ottoman Empire and regional rival tribes, affecting stability.
+        </p>
+        <a href="#detail3" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  Detailed Sections Below Cards  -->
+<div class="container my-5">
+  <div id="detail1" class="detail-section historical-detail">
+    <h3>Restoration and Revival</h3>
+    <p>
+      The Second Saudi State emerged in 1234 AH, following the collapse of the First Saudi State. 
+      Leaders from the Al Saud family and allied tribal chiefs gradually regained control over key cities in Najd. 
+      Diriyah was rebuilt, and Riyadh became a central hub for political and religious activities. 
+      This period marked the revival of Saudi authority and efforts to unify central Arabia once again.
+    </p>
+  </div>
+
+  <div id="detail2" class="detail-section historical-detail">
+    <h3>Governance and Stability</h3>
+    <p>
+      A more structured government was established, balancing the influence of tribal leaders with centralized administration. 
+      Islamic law was applied consistently, and councils advised rulers on military, legal, and economic matters. 
+      This system helped maintain relative stability despite internal divisions and tribal conflicts.
+    </p>
+  </div>
+
+  <div id="detail3" class="detail-section historical-detail">
+    <h3>Challenges and Conflicts</h3>
+    <p>
+      Throughout its existence, the Second Saudi State faced significant challenges, including internal family disputes, tribal uprisings, and pressure from the Ottoman Empire. 
+      Continuous conflicts with rival factions and external forces eventually weakened the state, leading to its collapse in 1344 AH / 1924 AD. 
+      Despite these struggles, it preserved the legacy of the First Saudi State and laid the groundwork for the Third Saudi State.
+    </p>
+  </div>
+</div>
+
+{% endblock %}

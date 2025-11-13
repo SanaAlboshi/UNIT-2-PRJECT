@@ -1,0 +1,82 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Third Saudi State{% endblock %}
+{% block wrapper_class %}state3-wrapper{% endblock %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- الكود العام -->
+<div class="map-section">
+  <div class="hero-overlay"></div>
+
+  <h1 class="hero-titlee">
+    Third Saudi State<br>
+    <p class="hero-subtitle">1319 - 1351 AH / 1902 - 1932 AD</p>
+  </h1>
+
+  <!-- Floating Cards Over Hero -->
+  <div class="cards-over-hero">
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="card-item historical-card">
+        <h4>Unification of the Kingdom</h4>
+        <p>
+          King Abdulaziz recaptured Riyadh and initiated the unification of the Arabian Peninsula under a single rule, consolidating the foundations for a modern state.
+        </p>
+        <a href="#detail1" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-item historical-card">
+        <h4>Governance and Administration</h4>
+        <p>
+          He established a strong central government, organized the military, and implemented Islamic law as the primary framework for governance and justice.
+        </p>
+        <a href="#detail2" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-item historical-card">
+        <h4>Development and Growth</h4>
+        <p>
+          King Abdulaziz focused on education, health, economy, and infrastructure, launching initiatives that laid the foundations for sustainable social and economic development.
+        </p>
+        <a href="#detail3" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== Detailed Sections Below Cards ====== -->
+<div class="container my-5">
+  <div id="detail1" class="detail-section historical-detail">
+    <h3>Unification of the Kingdom</h3>
+    <p>
+      King Abdulaziz began by retaking major cities, forming alliances with various tribes, and systematically consolidating political authority across Najd, Hijaz, and Al-Ahsa. 
+      These efforts culminated in the establishment of the Third Saudi State, creating a unified administration over the central and eastern regions of the Arabian Peninsula. 
+      This unification was instrumental in stabilizing the region and fostering national identity.
+    </p>
+  </div>
+
+  <div id="detail2" class="detail-section historical-detail">
+    <h3>Governance and Administration</h3>
+    <p>
+      The King developed institutions for effective governance, dividing powers among the judiciary, administration, and military. 
+      Islamic law was applied as the foundation of legal and civil order, ensuring justice and security for the population. 
+      Local leadership structures were also integrated to maintain tribal cooperation and enforce central policies efficiently.
+    </p>
+  </div>
+
+  <div id="detail3" class="detail-section historical-detail">
+    <h3>Development and Growth</h3>
+    <p>
+      Under King Abdulaziz, initiatives were launched to establish schools and universities, expand healthcare through hospitals and clinics, and improve infrastructure such as roads and ports. 
+      Economic policies encouraged trade, agriculture, and industry, which contributed to a growing, sustainable economy. 
+      These efforts laid the foundation for modern development and prosperity in the Kingdom.
+    </p>
+  </div>
+</div>
+
+{% endblock %}

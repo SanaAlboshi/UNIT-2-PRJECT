@@ -1,0 +1,390 @@
+/* = Dark Mode  */
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.dark-mode a {
+  color: #ffffff !important;
+}
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6 {
+  color: #cfb180;
+}
+
+/* دارك مود بسيط للمنيو */
+body.dark-mode .menu-icon-container {
+  background: rgba(255, 215, 0, 0.15); /* ذهبي ناعم */
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+body.dark-mode .menu-icon-container span {
+  color: #f5e7b2; /* أيقونة بلون ذهبي فاتح */
+}
+
+body.dark-mode .dropdown-menu-custom {
+  background: #1e1a15; /* خلفية غامقة */
+}
+
+body.dark-mode .dropdown-menu-custom a {
+  color: #e6d99a; /* نص ذهبي باهت */
+}
+
+body.dark-mode .dropdown-menu-custom a:hover {
+  background: rgba(193, 182, 146, 0.25);
+  color: #fff;
+}
+
+.dark-mode .navbar-nav {
+  background-color: rgba(50, 50, 50, 0.85);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+}
+
+.dark-mode .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.dark-mode .navbar-nav .nav-link:hover,
+.dark-mode .navbar-nav .nav-link.active {
+  background-color: #ffd369;
+  color: #000 !important;
+}
+
+.dark-mode .saudi-history-logo {
+  color: #ffd369;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.dark-mode .carousel-caption h1 {
+  color: #ffd369 !important;
+}
+
+.dark-mode .carousel-caption p {
+  color: #f0e5c5 !important;
+}
+
+.dark-mode .intro-section {
+  background: linear-gradient(135deg, #2a2a2a, #1f1f1f);
+}
+
+.dark-mode .intro-paragraph {
+  background: rgba(40,40,40,0.85);
+  color: #e0e0e0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.dark-mode .intro-subtitle::after {
+  background: linear-gradient(90deg, #ffd369, #f9d77e);
+}
+
+.dark-mode .intro-text {
+  color: #f5e6b3;
+}
+
+
+/*  زر الدارك مود  */
+body.dark-mode .carousel-caption .btn:hover {
+  background: linear-gradient(135deg, #d4af37, #b8932c);
+  color: #fff; /* يظل أبيض وواضح */
+  border-color: #d4af37;
+  transform: scale(1.05);
+}
+.dark-mode .card-item {
+  background: rgba(30,30,30,0.9);
+  border: 2px solid rgba(255,215,105,0.4);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+.dark-mode .card-item h4 {
+  color: #ffd369;
+}
+
+.dark-mode .card-item p {
+  color: #e0e0e0;
+}
+
+.dark-mode .card-item:hover {
+  background: rgba(255,215,105,0.1);
+  box-shadow: 0 30px 60px rgba(255,215,105,0.3);
+}
+
+
+body.dark-mode .read-more-btn {
+  background: linear-gradient(135deg, #b8932c, #9c7b24);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+  border: 2px solid transparent;
+}
+
+body.dark-mode .read-more-btn:hover {
+  background: #b8932c;         /* نفس اللون لكن أفتح قليلاً */
+  color: #fff;
+  box-shadow: 0 0 20px #d4af37;
+  transform: scale(1.05);
+  border-color: #d4af37;
+}
+
+.dark-mode .detail-section {
+  background: rgba(30,30,30,0.95);
+  border-left: 6px solid #ffd369;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.dark-mode .detail-section h3 {
+  color: #ffd369;
+}
+
+.dark-mode .detail-section p {
+  color: #e0e0e0;
+}
+
+.dark-mode footer {
+  background: linear-gradient(135deg, #111, #222);
+  color: #f5e6b3;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.7);
+}
+
+
+
+/* دارك مود لصفحة التاريخ -------*/
+/* الحاوية الرئيسية */
+body.dark-mode .old-era-container {
+  background: #1e1e1e !important;
+  background-image: none !important;
+  min-height: 100vh;
+  position: relative;
+}
+
+body.dark-mode .old-era-container::after {
+  display: none !important;
+}
+
+/* العنوان الكبير */
+body.dark-mode .header-section h1 {
+  color: #cfb180 !important;
+  text-shadow: 0 0 20px rgba(255,215,105,0.6), 2px 2px 8px rgba(0,0,0,0.8) !important;
+}
+
+/* النص تحت العنوان */
+body.dark-mode .header-section p {
+  color: #e0e0e0 !important;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+/* الخط العمودي */
+body.dark-mode .timeline {
+  border-left: 4px solid rgba(255,215,105,0.4) !important;
+}
+/* البوكسات */
+body.dark-mode .event {
+  background: rgba(30,30,30,0.9) !important;
+  border: 2px solid rgba(255,215,105,0.4) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7) !important;
+}
+/* الأيقونة ⚜️ */
+body.dark-mode .event::before {
+  background-color: #ffd369 !important;
+  color: #000 !important;
+  border: 2px solid rgba(255,215,105,0.4) !important;
+  box-shadow: 0 5px 15px rgba(255,215,105,0.3) !important;
+}
+/* عنوان التاريخ */
+body.dark-mode .event h2 {
+  color: #ffd369 !important;
+  border-bottom: 1px dashed rgba(255,215,105,0.4) !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+/* النص */
+body.dark-mode .event p {
+  color: #e0e0e0 !important;
+}
+/* عند الـ hover */
+body.dark-mode .event:hover {
+  background: rgba(255,215,105,0.1) !important;
+  box-shadow: 0 30px 60px rgba(255,215,105,0.3) !important;
+}
+
+
+
+/*  دارك مود لصفحة التعليم ----------*/
+
+/* الحاوية الرئيسية */
+body.dark-mode .education-section {
+  background-color: #1e1e1e !important;
+  border-color: rgba(255,215,105,0.4) !important;
+  box-shadow: 0 10px 50px rgba(0,0,0,0.9) !important;
+}
+
+/* الخلفية المنقطة */
+body.dark-mode .old-paper-bg {
+  opacity: 0.1 !important;
+}
+
+/* المحتوى */
+body.dark-mode .education-content {
+  color: #e0e0e0 !important;
+}
+/* الهيدر */
+body.dark-mode .education-header {
+  border-bottom: 2px solid rgba(255,215,105,0.3) !important;
+}
+body.dark-mode .education-header h2 {
+  color: #cfb180 !important;
+  text-shadow: 0 0 20px rgba(255,215,105,0.6), 2px 2px 8px rgba(0,0,0,0.8) !important;
+}
+body.dark-mode .education-header p {
+  color: #e0e0e0 !important;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7) !important;
+}
+/* البوكسات */
+body.dark-mode .education-part {
+  background: rgba(30,30,30,0.9) !important;
+  border-left: 10px solid rgba(255,215,105,0.4) !important;
+  border-right: 2px solid rgba(255,215,105,0.2) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7) !important;
+}
+body.dark-mode .education-part:hover {
+  background: rgba(255,215,105,0.1) !important;
+  box-shadow: 0 30px 60px rgba(255,215,105,0.3) !important;
+}
+/* الصور */
+body.dark-mode .part-image {
+  border-color: rgba(255,215,105,0.4) !important;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.8), 0 0 0 2px rgba(255,215,105,0.3) !important;
+  filter: brightness(0.85) contrast(1.1) !important;
+}
+body.dark-mode .education-part:hover .part-image {
+  filter: brightness(1) contrast(1.2) !important;
+  box-shadow: 0 15px 50px rgba(255,215,105,0.4), 0 0 0 3px #ffd369 !important;
+}
+/* العناوين */
+body.dark-mode .part-content h3 {
+  color: #ffd369 !important;
+  text-shadow: 0 0 15px rgba(255,215,105,0.5), 2px 2px 5px rgba(0,0,0,0.8) !important;
+}
+/* النصوص */
+body.dark-mode .part-content p {
+  color: #e0e0e0 !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7) !important;
+}
+/* الحرف الأول الكبير */
+body.dark-mode .education-part p::first-letter {
+  color: #ffd369 !important;
+  text-shadow: 0 0 20px rgba(255,215,105,0.8), 2px 2px 8px rgba(0,0,0,0.9) !important;
+}
+
+
+
+
+/* 🌙 دارك مود لصفحة الملوك ------*/
+
+body.dark-mode .kings-section {
+  background: #1e1e1e !important;
+}
+
+body.dark-mode .kings-header h2 {
+  color: #ffd369 !important;
+  text-shadow: 0 0 20px rgba(255,215,105,0.6), 2px 2px 8px rgba(0,0,0,0.8) !important;
+}
+
+body.dark-mode .kings-header p {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .king {
+  background: rgba(30,30,30,0.9) !important;
+  border: 2px solid rgba(255,215,105,0.4) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7) !important;
+}
+
+body.dark-mode .king:hover {
+  background: rgba(255,215,105,0.1) !important;
+  box-shadow: 0 30px 60px rgba(255,215,105,0.3) !important;
+}
+
+body.dark-mode .king-img {
+  border: 3px solid rgba(255,215,105,0.4) !important;
+  box-shadow: 
+    0 10px 30px rgba(0,0,0,0.8),
+    0 0 30px rgba(255,215,105,0.5) !important;
+  filter: brightness(0.9) contrast(1.1) !important;
+}
+
+body.dark-mode .king:hover .king-img {
+  box-shadow: 
+    0 15px 40px rgba(0,0,0,0.9),
+    0 0 50px rgba(255,215,105,0.8) !important;
+  filter: brightness(1) contrast(1.2) !important;
+}
+
+body.dark-mode .king h3 {
+  color: #ffd369 !important;
+  text-shadow: 0 0 15px rgba(255,215,105,0.5), 2px 2px 5px rgba(0,0,0,0.8) !important;
+}
+
+body.dark-mode .king-year {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .king p {
+  color: #e0e0e0 !important;
+}
+
+
+
+/*  Dark Mode Museums ------ */
+
+
+/* 🎥 Hero Section in Dark Mode */
+body.dark-mode .hero-video {
+  filter: brightness(40%);
+}
+
+body.dark-mode .video-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .hero-content {
+  color: #f8e9b0;
+  background: radial-gradient(circle at left, rgba(0, 0, 0, 0.6), rgba(0,0,0,0) 70%);
+}
+
+body.dark-mode .hero-content h1 {
+  color: #f2d37c;
+}
+
+body.dark-mode .hero-content p {
+  color: #f5e8c3;
+}
+
+/* 🏛 Museums Header */
+body.dark-mode .museums-header h2 {
+  color: #e8dcb8;
+  border-left: 6px solid #d4af37;
+}
+
+body.dark-mode .museums-header p {
+  color: #dcd2ad;
+}
+
+/* Cards */
+body.dark-mode .museum-card {
+  background: #574d43;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6), 0 0 10px rgba(212,175,55,0.15) inset;
+}
+body.dark-mode .museum-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8), 0 0 20px rgba(212,175,55,0.25) inset;
+}
+body.dark-mode .museum-content h3 {
+  color: #f0d68f;
+}
+body.dark-mode .museum-content p {
+  color: #e8dcc2;
+}
+
+

@@ -1,0 +1,65 @@
+.book-visit-container {
+  max-width: 600px;
+  margin: 80px auto 40px auto; /* رفع أقل للبوكس من الأعلى */
+  background: #79674c;
+  padding: 40px;
+  border-radius: 40px;
+  font-family: 'Phudu', sans-serif;
+}
+.header-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header-section h1 {
+  color: #e8d2a8;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.header-section p {
+  color: #ddd2c2;
+  font-size: 1.1rem;
+}
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ddd2c2;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #eecb57;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #cda63b;
+  outline: none;
+}
+.btn-submit {
+  padding: 15px 0;
+  background: linear-gradient(135deg, #e4bf45);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: scale(1.05);
+  background: white;
+  color: #e4bf45;
+}

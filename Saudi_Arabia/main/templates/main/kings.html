@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Kings{% endblock %}
+{% block extra_head %}
+<link href="{% static 'css/king.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<section class="kings-section">
+  <div class="kings-header">
+    <h2>Kings of Saudi Arabia</h2>
+    <p>Distinguished leadership and strategic vision have marked the history of Saudi Arabia through successive generations of the House of Saud.</p>
+  </div>
+
+  <div class="kings-timeline">
+
+    <div class="king">
+      <img src="{% static 'images/king-abdulaziz.jpg' %}" alt="King Abdulaziz" class="king-img">
+      <h3>King Abdulaziz <span class="king-year">(1932–1953)</span></h3>      
+      <p>Founder of modern Saudi Arabia, King Abdulaziz unified the country and established a stable state based on Quran and Sunnah. The Kingdom was officially named “Saudi Arabia” on September 23, 1932.</p>
+    </div>
+
+    <div class="king">
+      <img src="{% static 'images/king-saud.jpg' %}" alt="King Saud" class="king-img">
+        <h3>King Saud <span class="king-year">(1953 – 1964)</span></h3>
+      <p>Continued his father's work in national development, internal visits across Saudi cities, and international diplomacy for cooperation and modernization.</p>
+    </div>
+
+    <div class="king">
+      <img src="{% static 'images/king-faisal.jpg' %}" alt="King Faisal" class="king-img">
+        <h3>King Faisal <span class="king-year">(1964 – 1975)</span></h3>
+      <p>Oversaw economic and social reforms, led Saudi Arabia in international and Arab meetings, and strengthened the Kingdom’s role globally.</p>
+    </div>
+
+    <div class="king">
+      <img src="{% static 'images/king-khalid.jpg' %}" alt="King Khalid" class="king-img">
+        <h3>King Khalid <span class="king-year">(1975 – 1982)</span></h3>
+      <p>Maintained development combining modern civilization with preservation of religious and historical constants of the Kingdom.</p>
+    </div>
+
+    <div class="king">
+      <img src="{% static 'images/king-fahad.jpg' %}" alt="King Fahd" class="king-img">
+        <h3>King Fahd <span class="king-year">(1982 – 2005)</span></h3>
+      <p>Led comprehensive development, expanded education and infrastructure, ensured Sharia principles, and enlarged the Two Holy Mosques.</p>
+    </div>
+
+    <div class="king">
+      <img src="{% static 'images/king-abdullah.jpg' %}" alt="King Abdullah" class="king-img">
+        <h3>King Abdullah <span class="king-year">(2005 – 2015)</span></h3>
+      <p>Promoted Islamic solidarity, resolved Arab conflicts, supported international organizations, and advanced education and science.</p>
+    </div>
+
+    <div class="king">
+      <img src="{% static 'images/king-salman.jpg' %}" alt="King Salman" class="king-img">
+        <h3>King Salman <span class="king-year">(2015 – Present)</span></h3>
+      <p>Launched Vision 2030, empowered women, and developed projects in transport, energy, and technology while leading the Kingdom forward.</p>
+    </div>
+
+  </div>
+</section>
+
+<script>const kings = document.querySelectorAll('.king');
+
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  kings.forEach(king => {
+    const kingTop = king.getBoundingClientRect().top;
+
+    if(kingTop < triggerBottom){
+      king.classList.add('show');
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+</script>
+
+{% endblock %}

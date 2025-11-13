@@ -1,0 +1,90 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}First Saudi State{% endblock %}
+{% block wrapper_class %}state1-wrapper{% endblock %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- الكود العام -->
+
+<!--  Hero Section with Old-Map Style  -->
+<div class="map-section">
+  <div class="hero-overlay"></div>
+  
+  <h1 class="hero-titlee">
+    FIRST SAUDI STATE
+    <p class="hero-subtitle">1157 - 1233 AH / 1744 - 1818 AD</p>
+  </h1>
+
+  <!-- Floating Historical Cards -->
+  <div class="cards-over-hero">
+    <div class="cards-container">
+
+      <!-- Card 1 -->
+      <div class="card-item historical-card">
+        <h4>Unification</h4>
+        <p>
+          Imam Muhammad bin Saud and Sheikh Muhammad bin Abdul Wahhab founded the First Saudi State, uniting tribes on religious and political foundations and establishing Diriyah as the center of governance.
+        </p>
+        <a href="#detail1" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-item historical-card">
+        <h4>Governance and Administration</h4>
+        <p>
+          The rulers implemented Islamic law, organized justice and education, and collected zakat to support the state and maintain stability.
+        </p>
+        <a href="#detail2" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-item historical-card">
+        <h4>Challenges and Fall</h4>
+        <p>
+          The state faced internal resistance and the campaign of Muhammad Ali Pasha, ultimately leading to the destruction of Diriyah and exile of Imam Abdullah bin Saud.
+        </p>
+        <a href="#detail3" class="read-more-btn">Read More</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--  Detailed Historical Sections  -->
+<div class="container my-5">
+
+  <div id="detail1" class="detail-section historical-detail">
+    <h3>Unification</h3>
+    <p>
+      The First Saudi State began in Diriyah in 1157 AH under Imam Muhammad bin Saud and Sheikh Muhammad bin Abdul Wahhab. 
+      Their alliance focused on uniting Arabian tribes on religious and political foundations and eliminating innovations and superstitions. 
+      Alliances were made with tribes to ensure loyalty, and the army was organized to defend the state and gradually expand its influence. 
+      Diriyah became a center of knowledge and religious outreach, attracting scholars and students from across the Arabian Peninsula.
+    </p>
+  </div>
+
+  <div id="detail2" class="detail-section historical-detail">
+    <h3>Governance and Administration</h3>
+    <p>
+      The rulers of the First Saudi State established a governance system based on Islamic law, with courts to organize life and ensure justice. 
+      Zakat and taxes were collected to support the state, and councils were created to provide political and religious guidance. 
+      The state promoted education, established libraries and schools, and attracted scholars to spread knowledge in Diriyah.
+    </p>
+  </div>
+
+  <div id="detail3" class="detail-section historical-detail">
+    <h3>Challenges and Fall</h3>
+    <p>
+      The First Saudi State faced significant internal and external challenges. Internally, some tribes resisted central authority, causing limited conflicts. 
+      Externally, the Ottoman Empire viewed the state’s expansion as a threat and sent a military campaign led by Muhammad Ali Pasha. 
+      In 1233 AH, Diriyah was destroyed and Imam Abdullah bin Saud was exiled, ending the First Saudi State. 
+      Nevertheless, the state left an important legacy in unifying Najd, spreading the reformist call, and laying the foundations for the Second Saudi State.
+    </p>
+  </div>
+
+</div>
+
+
+{% endblock %}

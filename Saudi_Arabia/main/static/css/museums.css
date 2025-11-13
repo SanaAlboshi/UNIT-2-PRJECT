@@ -1,0 +1,170 @@
+
+/*  Hero Video Section  */
+.hero-video-section {
+  position: relative;
+  height: 100vh;               /* يملأ ارتفاع الصفحة بالكامل */
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;                 /* يملأ العرض بالكامل */
+  height: 100%;                /* يملأ الارتفاع بالكامل */
+  object-fit: cover;           /* يقص الفيديو ليتناسب مع الشاشة */
+  z-index: 0;
+  filter: brightness(60%);     /* تغميق بسيط عشان النص يبرز */
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.247); /* طبقة شفافة غامقة فوق الفيديو */
+  z-index: 1;
+}
+
+/*  Hero Video Title  */
+.hero-content {
+  position: absolute;
+  top: 80%;
+  left: 2%;           /* العنوان على الجانب الأيسر */
+  transform: translateY(-50%);
+  color: #ddcfa0;
+  text-align: left;
+  z-index: 2;
+  max-width: 45%;      /* لا يغطي الفيديو بالكامل */
+  /* 🌫️ خلفية ناعمة تندمج مع الفيديو */
+  background: radial-gradient(circle at left, rgba(0, 0, 0, 0.372), rgba(0,0,0,0) 70%);
+  padding: 25px 20px;
+  border-radius: 50px;
+}
+.hero-content h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+.hero-content h1,
+.hero-content p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.982); /* ظل غامق */
+}
+.hero-content p {
+  font-size: 1.2rem;
+  color: #f3e9d2;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
+  margin-top: 15px;
+  font-style: italic;
+
+}
+
+
+/*  Museums Cards Section  */
+.museums-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: 'Crimson Text', serif;
+}
+
+/*  Museums Section Header  */
+.museums-header h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: #5d4b3c;
+  text-align: left;      /* غيرت من center إلى left */
+  border-left: 6px solid #d4af37; /* خط جانبي */
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.museums-header p {
+  text-align: left;
+  color: #4a463e;
+  margin-left: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+
+/* Grid for museum cards */
+.museums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Individual museum card */
+.museum-card {
+  background:  #5b4532;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 10px rgba(212,175,55,0.2) inset;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.museum-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7), 0 0 20px rgba(212,175,55,0.3) inset;
+}
+
+/* Image */
+.museum-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 5px solid #d4af37;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.museum-card:hover .museum-image img {
+  transform: scale(1.05) rotate(0.5deg);
+  filter: brightness(1.1);
+}
+
+/* Content */
+.museum-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.museum-content h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.museum-content p {
+  font-size: 1rem;
+  color: #f3e9d2;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Button */
+.btn-visit {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #d4af37, #b8932c);
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-visit:hover {
+  background: linear-gradient(135deg, #b8932c, #d4af37);
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(212,175,55,0.5);
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .museums-header h2 { font-size: 2.2rem; }
+  .museum-image img { height: 180px; }
+  .museum-content h3 { font-size: 1.5rem; }
+}

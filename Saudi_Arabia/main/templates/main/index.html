@@ -1,0 +1,106 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Home - Saudi Arabia History{% endblock %}
+
+
+{% block content %}
+
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}?v=3">
+
+
+<!-- Slider Section -->
+<section class="hero-section position-relative">
+  <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      {% for i in "01234" %}
+        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}"></button>
+      {% endfor %}
+    </div>
+
+    <div class="carousel-inner">
+      
+      <!-- 1 -->
+      <div class="carousel-item active position-relative">
+        <img src="{% static 'images/yy.jpg' %}" class="d-block w-100 hero-img" alt="First Saudi State">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="fw-bold text-white mb-3">THE FIRST SAUDI STATE </h1>
+          <p class="text-light mb-4">Discover the beginnings of the First Saudi State</p>
+          <a href="{% url 'main:state_view' %}" class="btn btn-light btn-lg rounded-pill">Learn More</a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="carousel-item position-relative">
+        <img src="{% static 'images/Second1.jpg' %}" class="d-block w-100 hero-img" alt="Second Saudi State">
+        <div class="overlay1"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="fw-bold text-white mb-3">SECOND SAUDI STATE</h1>
+          <p class="text-light mb-4">A phase of reconstruction and unity</p>
+          <a href="{% url 'main:statee_view' %}" class="btn btn-light btn-lg rounded-pill">Learn More</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="carousel-item position-relative">
+        <img src="{% static 'images/kingss.jpg' %}" class="d-block w-100 hero-img" alt="Unification of the Kingdom">
+        <div class="overlay2"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="fw-bold text-white mb-3">UNIFICATION OF THE KINGDOM</h1>
+          <p class="text-light mb-4">The unification journey led by King Abdulaziz</p>
+          <a href="{% url 'main:unite_view' %}" class="btn btn-light btn-lg rounded-pill">Learn More</a>
+        </div>
+      </div>
+
+<!-- 4 -->
+      <div class="carousel-item position-relative">
+        <img src="{% static 'images/kinng.jpg' %}" class="d-block w-100 hero-img" alt="Saudi Kings">
+        <div class="overlay3"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="fw-bold text-white mb-3">SAUDI KING</h1>
+          <p class="text-light mb-4">The history of Saudi Arabian rulers</p>
+          <a href="{% url 'main:kings_view' %}" class="btn btn-light btn-lg rounded-pill">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Introduction Section -->
+<section class="intro-section py-5">
+  <div class="container">
+    <h2 class="intro-title text-center mb-5">Introduction to the History of Saudi Arabia</h2>
+
+    <div class="intro-paragraph mb-5">
+      <h4 class="intro-subtitle mb-3">Origins and Beginnings</h4>
+      <p class="intro-text">
+        The Kingdom of Saudi Arabia traces its origins to 1744 in Diriyah, when Imam Muhammad bin Saud allied with Sheikh Muhammad bin Abdulwahhab to unify the region under true Islamic principles. This was the foundation of an Arab and Islamic entity that brought unity and stability to the Arabian Peninsula.
+      </p>
+    </div>
+
+    <div class="intro-paragraph mb-5">
+      <h4 class="intro-subtitle mb-3">Challenges and Perseverance</h4>
+      <p class="intro-text">
+        Despite the fall of the First Saudi State in 1818 by the Ottomans, the Saudi spirit endured. In 1824, Imam Turki bin Abdullah established the Second Saudi State, with Riyadh as its capital. Despite internal and external struggles, the dream of unity persisted, paving the way for the modern kingdom.
+      </p>
+    </div>
+
+    <div class="intro-paragraph">
+      <h4 class="intro-subtitle mb-3">Unification and Prosperity</h4>
+      <p class="intro-text">
+        In 1902, King Abdulaziz bin Abdulrahman Al Saud reclaimed Riyadh, beginning the unification journey that culminated in the establishment of the <strong>Kingdom of Saudi Arabia</strong> in 1932. Since then, the Kingdom has continued to grow and develop, maintaining its Islamic and Arab identity while achieving global prominence.
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+

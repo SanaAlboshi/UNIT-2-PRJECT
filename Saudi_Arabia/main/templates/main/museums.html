@@ -1,0 +1,98 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Saudi Museums{% endblock %}
+{% block wrapper_class %}museums-wrapper{% endblock %}
+
+{% block extra_head %}
+<link href="{% static 'css/museums.css' %}?v=4" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<!--  Hero Video Section  -->
+<div class="hero-video-section">
+  <video id="heroVideo" autoplay muted loop playsinline class="hero-video">
+    <source src="{% static 'video/vedd.mp4' %}" type="video/mp4">
+  </video>
+  <div class="video-overlay"></div>
+
+  <div class="hero-content text-left">
+    <h1>SAUDI MUSEUMS</h1>
+    <p>Discover the Kingdom’s rich history and vibrant heritage through its most iconic museums.</p>
+  </div>
+</div>
+
+<!--  Museums Section  -->
+<section class="museums-section">
+  <div class="museums-header">
+    <h2>Explore Saudi Museums</h2>
+    <p>Step into the history and culture of the Kingdom through these remarkable museums.</p>
+  </div>
+
+  <div class="museums-grid">
+
+    <!-- Museum 1 -->
+    <div class="museum-card with-image">
+      <div class="museum-image">
+        <img src="{% static 'images/sa-ry.jpg' %}" alt="National Museum of Saudi Arabia">
+      </div>
+      <div class="museum-content">
+        <h3>National Museum of Saudi Arabia - Riyadh</h3>
+        <p>Opened in 1999, covering 17,000 m², with over 3,700 artifacts displayed across 8 main halls.</p>
+        <a href="{% url 'main:book_visit' %}" class="btn-visit">Visit Museum</a>
+      </div>
+    </div>
+
+    <!-- Museum 2 -->
+    <div class="museum-card with-image reverse">
+      <div class="museum-image">
+        <img src="{% static 'images/med-d.jpg' %}" alt="Dar Al Madinah Museum">
+      </div>
+      <div class="museum-content">
+        <h3>Dar Al Madinah Museum - Medina</h3>
+        <p>First museum dedicated to Medina’s history and Prophetic heritage, showcasing manuscripts and artifacts.</p>
+        <a href="{% url 'main:book_visit' %}" class="btn-visit">Visit Museum</a>
+      </div>
+    </div>
+
+    <!-- Museum 3 -->
+    <div class="museum-card with-image">
+      <div class="museum-image">
+        <img src="{% static 'images/ms-ry.jpg' %}" alt="Masmak Palace Museum">
+      </div>
+      <div class="museum-content">
+        <h3>Masmak Palace Museum - Riyadh</h3>
+        <p>Historic 19th-century fortress where the unification of Saudi Arabia began, now a cultural museum.</p>
+        <a href="{% url 'main:book_visit' %}" class="btn-visit">Visit Museum</a>
+      </div>
+    </div>
+
+    <!-- Museum 4 -->
+    <div class="museum-card with-image reverse">
+      <div class="museum-image">
+        <img src="{% static 'images/je-tt.jpg' %}" alt="Al-Tayyibat Museum">
+      </div>
+      <div class="museum-content">
+        <h3>Al-Tayyibat Museum - Jeddah</h3>
+        <p>Explores 2,500 years of Jeddah’s history with models, manuscripts, and traditional artifacts.</p>
+        <a href="{% url 'main:book_visit' %}" class="btn-visit">Visit Museum</a>
+      </div>
+    </div>
+
+    <!-- Museum 5 -->
+    <div class="museum-card with-image">
+      <div class="museum-image">
+        <img src="{% static 'images/sl-ry.jpg' %}" alt="Diriyah Museum">
+      </div>
+      <div class="museum-content">
+        <h3>Diriyah Museum - Salwa Palace</h3>
+        <p>Showcases Diriyah’s story through halls of architecture, commerce, warfare, and Arabian horses.</p>
+        <a href="{% url 'main:book_visit' %}" class="btn-visit">Visit Museum</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

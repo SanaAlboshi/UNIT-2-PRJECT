@@ -1,0 +1,105 @@
+/*  إعدادات عامة للصفحة  */
+body {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+  padding: 0;
+}
+.kings-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+/*  Header  */
+
+.kings-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.kings-header h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #6e5d4d;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+.kings-header p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5a4632;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*  Timeline / Kings  */
+
+.kings-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.king {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  background: rgba(255, 246, 222, 0.6);
+  border: 2px solid #846c53;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  padding: 30px;
+  border-radius: 15px;
+}
+.king:hover {
+  box-shadow: 0 15px 40px rgba(139, 90, 43, 0.5);
+  transform: translateY(-5px);
+}
+.king-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+  border: 3px solid #846c53;
+}
+
+.king:hover .king-img {
+  box-shadow: 0 15px 40px rgba(114, 99, 85, 0.4);
+  transform: scale(1.05);
+}
+.king-content {
+  flex: 1;
+}
+/* اسم الملك */
+.king h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: #6b5c40;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+/* التاريخ - span داخل h3 */
+.king-year {
+  display: inline-block; /* أو inline */
+  font-size: 1rem;
+  color: #8b6f47;
+  font-weight: 300;
+  font-family: 'Amiri', serif;
+  margin-right: 10px; /* مسافة بين السنوات */
+  margin-bottom: 0;   /* إزالة المسافة السفلية */
+}
+/* النص */
+.king p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #3b2f1e;
+  margin-top: 15px;
+}
+/* تأثير الظهور عند التمرير */
+.king.show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,66 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Book Your Museum Visit{% endblock %}
+{% block wrapper_class %}book-visit-wrapper{% endblock %}
+
+{% block extra_head %}
+<link href="{% static 'css/book_visit.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<div class="book-visit-container">
+
+  <div class="header-section">
+    <h1>Book Your Visit</h1>
+    <p>Fill in your details and select a convenient date to explore our museums.</p>
+  </div>
+
+  <div class="form-wrapper">
+    <form method="post" action="">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+966 5X XXX XXXX" required>
+      </div>
+
+      <div class="form-group">
+        <label for="museum">Select Museum</label>
+        <select id="museum" name="museum" required>
+          <option value="">-- Choose a Museum --</option>
+          <option value="National Museum">National Museum - Riyadh</option>
+          <option value="Dar Al Madinah">Dar Al Madinah Museum - Medina</option>
+          <option value="Masmak Palace">Masmak Palace Museum - Riyadh</option>
+          <option value="Al-Tayyibat">Al-Tayyibat Museum - Jeddah</option>
+          <option value="Diriyah">Diriyah Museum - Salwa Palace</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Visit Date</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Visit Time</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Book Visit</button>
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}

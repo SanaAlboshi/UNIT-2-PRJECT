@@ -1,0 +1,86 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Education in Ancient Saudi Arabia{% endblock %}
+{% block wrapper_class %}education-wrapper{% endblock %}
+
+{% block extra_head %}
+<link href="{% static 'css/education.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<!--  Education Section  -->
+<section class="education-section">
+  <div class="old-paper-bg"></div>
+  
+  <div class="education-content">
+    <!-- Header -->
+    <div class="education-header">
+      <h2>Education in Ancient Saudi Arabia</h2>
+      <p>Discover how learning and knowledge shaped life in the Kingdom centuries ago.</p>
+    </div>
+
+    <!-- Education Details -->
+    <div class="education-details">
+      
+      <!-- Early Learning -->
+      <div class="education-part with-image">
+        <img src="{% static 'images/ede.jpg' %}" alt="Early Learning" class="part-image">
+        <div class="part-content">
+          <h3>Early Learning</h3>
+          <p>
+            Education in ancient Saudi Arabia began within families and communities. Children were taught essential life skills, moral values, and tribal traditions from parents and elders. Storytelling, poetry, and oral recitation were common methods of passing knowledge to the younger generation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Religious Education -->
+      <div class="education-part with-image reverse">
+        <div class="part-content">
+          <h3>Religious Education</h3>
+          <p>
+            Religious instruction was a core part of learning. Young boys attended mosques to read, write, and memorize the Quran. They also studied Islamic principles, ethics, and the Arabic language. These mosques served as the primary centers for learning and spiritual development.
+          </p>
+        </div>
+        <img src="{% static 'images/edd.jpg' %}" alt="Religious Education" class="part-image">
+      </div>
+
+      <!-- Practical Skills -->
+      <div class="education-part with-image">
+        <img src="{% static 'images/ed.jpg' %}" alt="Practical Skills" class="part-image">
+        <div class="part-content">
+          <h3>Practical Skills</h3>
+          <p>
+            Alongside religious studies, children learned practical skills necessary for daily life. Boys were trained in agriculture, animal husbandry, trade, and various crafts. Girls were mostly educated at home, learning household management, cooking, social etiquette, and religious values.
+          </p>
+        </div>
+      </div>
+
+      <!-- Knowledge Preservation -->
+      <div class="education-part with-image reverse">
+        <div class="part-content">
+          <h3>Knowledge Preservation</h3>
+          <p>
+            Knowledge in ancient Saudi Arabia was mostly passed down orally. Scholars and religious teachers played a key role in preserving cultural, religious, and social heritage. Their guidance ensured that traditions, values, and wisdom were maintained across generations.
+          </p>
+        </div>
+        <img src="{% static 'images/eed.jpg' %}" alt="Knowledge Preservation" class="part-image">
+      </div>
+
+      <!-- Foundation for Formal Schools -->
+      <div class="education-part">
+        <h3>Foundation for Formal Schools</h3>
+        <p>
+          This blend of religious, moral, and practical education laid the groundwork for the formal educational institutions that emerged later in the Kingdom. It shaped a culture that valued knowledge, ethics, and community development.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
